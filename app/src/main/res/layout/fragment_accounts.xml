@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/image_48"
+            android:layout_height="@dimen/image_48"
+            android:layout_margin="@dimen/small_margin"
+            android:src="@drawable/ic_person_black_24dp" />
+
+        <TextView
+            android:id="@+id/txt_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/small_margin"
+            android:text="@string/accounts"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image_add"
+            android:layout_width="@dimen/image_48"
+            android:layout_height="@dimen/image_48"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/small_margin"
+            android:src="@drawable/ic_add_black_24dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:tabBackground="@android:color/transparent"
+            app:tabGravity="fill"
+            app:tabInlineLabel="false"
+            app:tabMode="fixed"
+            app:tabTextAppearance="?android:attr/textAppearanceSmall" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tablayout" />
+    </RelativeLayout>
+</RelativeLayout>

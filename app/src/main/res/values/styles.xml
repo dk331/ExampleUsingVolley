@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/darkGreen</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@color/darkGreen</item>
+        <!-- Status bar stuff. -->
+        <!--<item name="windowActionBarOverlay">true</item>-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="colorPrimaryDark">@color/darkGreen</item>
+        <item name="colorSecondary">@android:color/white</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

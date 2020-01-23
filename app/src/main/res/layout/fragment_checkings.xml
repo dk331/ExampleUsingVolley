@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backWhite">
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:padding="@dimen/activity_horizontal_margin"
+        card_view:cardBackgroundColor="@color/cardWhite"
+        card_view:cardCornerRadius="@dimen/cardCornerRadius"
+        card_view:cardElevation="@dimen/cardElevation"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:text="@string/you_don_t_have_any_account_ncreate_one_in_seconds"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_warning"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:src="@drawable/ic_iconfinder_accounts_page" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_add_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:background="@drawable/button_background"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="@string/add_account"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/cardWhite"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

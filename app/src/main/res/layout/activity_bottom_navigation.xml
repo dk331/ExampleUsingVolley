@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/nav_view"
+        android:layout_alignParentStart="true"
+        app:defaultNavHost="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:navGraph="@navigation/mobile_navigation_1" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <com.dhananjay.democreateaccount.views.CustomBottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:clickable="false"
+            app:itemBackground="@android:color/white"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_nav_menu" />
+
+    </FrameLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:onClick="onFabClicked"
+        android:src="@drawable/fab_drawable"
+        app:fabSize="auto"
+        app:layout_anchor="@+id/nav_view"
+        app:layout_anchorGravity="center|top" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

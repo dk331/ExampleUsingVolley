@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="darkGreen">#30c996</color>
+    <color name="green">#73eb93</color>
+    <color name="darkViolet">#736af0</color>
+    <color name="violet">#9b9bfe</color>
+    <color name="darkPink">#ec6aa0</color>
+    <color name="pink">#faa8b3</color>
+    <color name="backWhite">#fcfbff</color>
+    <color name="cardWhite">#ffffff</color>
+    <color name="disabledGray">#e1e1e1</color>
+    <color name="textBlack">#343435</color>
+    <color name="navMenuViolet">#503796</color>
+    <color name="colorArrow">#ff7021</color>
+</resources>
